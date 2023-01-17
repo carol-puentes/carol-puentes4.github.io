@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Reconocimiento de rostros</title>
+    <style>
+      
+      nav{
+        color: white;
+      }
+      html {
+        min-height: 100%;
+        position: relative;
+      }
+      body {
+        margin: 0;
+        margin-bottom: 40px;
+      }
+      footer {
+        background-color: rgba(242, 78, 157, 0.436);
+        /*position: absolute;*/
+        bottom: 0;
+        width: 100%;
+        height:60px;
+        color: white;
+      }
+     
+      #menu ul li{
+        display: inline-block;
+      }
+      #menu ul li a{
+        color: rgba(242, 78, 157, 0.436);
+        display: block;
+        padding: 15px 30px;
+        text-decoration: none; /*  quita subrayado*/
+        
+      }
+      #menu ul li a:hover{
+        color:white;
+        background-color: rgb(242, 78, 157);
+      }
+  
+      #texto{
+        background-color: black; 
+        box-shadow: 10px 5px 5px rgba(242, 78, 157, 0.436);
+      }
+      #texto a{
+        font-size: 40px;
+        padding-left: 30px;
+      }
+      #lenguaje{
+        background-color:white;
+
+      }
+
+      /*--Prueba*/
+      #check{
+        position: relative;
+        width: 50px;
+        height: 25px;
+      }
+      #check:before{
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        background: rgb(242, 78, 157);;/* #333 ;*/
+        border-radius: 25px;
+      }
+      #check:after{
+        content: '';
+        position: absolute;
+        right: 0;
+        height: 25px;
+        width: 25px;
+        background: #fff;
+        border-radius: 25px;
+        transition: 0.25s;
+        border: 2px solid #333;
+        box-sizing: border-box;
+      }
+      #check:checked:after{
+        left: 25px;
+        border: 2px solid rgb(242, 78, 157);
+      }
+      #check:checked:before{
+        background: rgb(242, 78, 157);
+      }
+
+      .love::before {
+        content: '\2665';
+        color: red;
+        font-size: 3rem;
+      }
+
+    </style>
+     <!-- NATIVO --
+     <link rel="stylesheet" href="{{ url_for('static', filename='index.css')}}"-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+     <script
+     src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+  <nav >
+    <div  id="texto">
+      <a class="navbar-brand" >TE AMO ❣ </a> 
+        <input type="checkbox" id="check">
+        <span class="es">LOVE</span>
+    </div>
+
+    <div id="menu">
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#dia">
+            Cuanto tiempo?
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#porque">Por que?</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+
+  
+
+ <!-- <header class="py-lg-5 px-7" -->
+    <div class="card ">
+      <div style="padding-left: 30px;">
+        <h2 class="text-black "> Sorprendida?</h2>
+        <p> 
+          Te vivo diciendo que soy de las personas mas malas para hablar cuando de algo 
+          serio se trata y posiblemente de las mas complicadas para expresar lo que siente,
+          pero es que tan solo te miro aqui junto a mi y no puedo pensar mas que en lo feliz 
+          que estoy de tenerte a mi lado, de lo feliz que me hace ver a esa chica hermosa e 
+          increible en la que te has convertido, en lo mucho que me alegra verte cumplir tus 
+          metas y como esa sonrisa tan hermosa me enamora cada dia.
+        </p>
+
+        <h2 class="text-black " id="porque" > Por qué?</h2>
+        <div>
+          <div class="love">Porque tenias que ser tu</div>
+          <div class="love">Porque eres mi lugar seguro</div>
+          <div class="love">Porque fuiste lo mejor de mi año</div>
+          <div class="love">Porque me encanta cada parte de ti</div>
+          <div class="love">Porque me haces la chica mas facil del mundo</div>
+          <div class="love">Porque te mereces que te traten como la princesa que eres</div>
+          <div class="love">Porque te mereces que cada dia te recuerden lo guapa que estas</div>
+          <div class="love">Porque sin importar lo que pase seguimos demostrando que el amor es mas fuerte
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card ">
+      <div style="padding-left: 30px; padding-top: 50px;" id="dia">
+        
+        <h2 class="text-black ">Cuanto tiempo?</h2>
+        <p> 
+          No te imaginas la felicidad que me da saber que:
+          <br>No solo es un día sino 669 
+          <br>No solo es una semana sino 95
+          <br>No solo es un mes sino 22 
+          <br>No solo es un año sino casi 2
+        </p>
+      </div>
+    </div>
+  <!-- </header -->
+
+  <footer class="py-5" >
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; </p>
+      <p class = "m-0 text-center text-white">LOVE 2022</p>
+    </div>
+  </footer>
+
+  <script>
+    var checkbox=document.querySelector(".check");
+    check.addEventListener('click',idioma);
+    function idioma(){
+      console.log(check.checked);
+      let id=check.checked;
+      if(id==true){
+        location.href="prueba.html"
+      }
+      else{
+        location.href="principal.html"
+      }
+    }
+  </script>
+       
+        
+</body>
+</html>
