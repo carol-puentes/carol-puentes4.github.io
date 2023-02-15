@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Feliz hoy</title>
+    <style>
+        
+     
+      
+       @media (max-width: 768px) {
+        .columna figure .capa{
+          position: absolute;
+          top: 0;
+          padding-top: 5.5em;
+          padding-left: 17em;
+          transition: all 400ms ease-out;
+          /* opacity: 0;*/
+        }
+        .columna figure .capa h3{
+    color: rgb(0, 0, 0);
+    font-weight: 40;
+    font-size: 20px;
+    margin-bottom: 20px;
+    transition: all 400ms ease-out;
+ }
+      }
+  
+      @media (min-width: 768px) {
+        .columna figure .capa{
+          position: absolute;
+          top: 0;
+          padding-left: 2em;
+          padding-top: 12.5em;
+          width: 14em;
+          height: 100em;
+          transition: all 400ms ease-out;
+          opacity: 0;
+          text-align: center;
+        }
+        .columna figure .capa h3{
+    color: rgb(0, 0, 0);
+    font-weight: 40;
+    font-size: 20px;
+    margin-bottom: 20px;
+    transition: all 400ms ease-out;
+ }
+
+      }
+     
+         .delfin{
+          
+          width: 1em;
+          height: 1em;
+          box-shadow: 
+          /* primera lineas*/
+          8em 1em rgb(77, 170, 237),
+          9em 1em rgb(77, 170, 237),
+          10em 1em rgb(77, 170, 237),
+          /* segundas lineas*/
+          7em 2em rgb(77, 170, 237),
+          8em 2em rgb(77, 170, 237),
+          9em 2em rgb(77, 170, 237),
+          10em 2em rgb(77, 170, 237),
+          11em 2em rgb(77, 170, 237),
+          /* tercera lineas*/
+          6em 3em rgb(77, 170, 237),
+          7em 3em rgb(77, 170, 237),
+          8em 3em rgb(0, 0, 0),
+          9em 3em rgb(77, 170, 237),
+          10em 3em rgb(77, 170, 237),
+          11em 3em rgb(77, 170, 237),
+          12em 3em rgb(77, 170, 237),
+          13em 3em rgb(77, 170, 237),
+          /* cuarta lineas
+          rgb(77, 170, 237),
+          rgb(250, 229, 166),
+          */
+          7em 4em rgb(250, 229, 166),
+          8em 4em rgb(250, 229, 166),
+          9em 4em rgb(250, 229, 166),
+          10em 4em rgb(77, 170, 237),
+          11em 4em rgb(77, 170, 237),
+          12em 4em rgb(77, 170, 237),
+          13em 4em rgb(77, 170, 237),
+          14em 4em rgb(77, 170, 237),
+          /* quinta lineas*/
+          9em 5em rgb(250, 229, 166),
+          10em 5em rgb(250, 229, 166),
+          11em 5em rgb(77, 170, 237),
+          12em 5em rgb(77, 170, 237),
+          /* sexta lineas*/
+          10em 6em rgb(250, 229, 166),
+          11em 6em rgb(77, 170, 237),
+          12em 6em rgb(77, 170, 237),
+          /* septima lineas*/
+          10em 7em rgb(250, 229, 166),
+          11em 7em rgb(77, 170, 237),
+          12em 7em rgb(77, 170, 237),
+          /* octaba lineas*/
+          7em 8em rgb(77, 170, 237),
+          8em 8em rgb(77, 170, 237),
+          10em 8em rgb(77, 170, 237),
+          11em 8em rgb(77, 170, 237),
+          /* novena lineas*/
+          8em 9em rgb(77, 170, 237),
+          9em 9em rgb(77, 170, 237),
+          10em 9em rgb(77, 170, 237),
+          /* decima lineas*/
+          8em 10em rgb(77, 170, 237),
+          9em 10em rgb(77, 170, 237),
+          /* onceava lineas*/
+          7em 11em rgb(77, 170, 237),
+          8em 11em rgb(77, 170, 237)
+         }
+      </style>
+    <style>
+      
+      nav{
+        color: white;
+      }
+      html {
+        min-height: 100%;
+        position: relative;
+      }
+      body {
+        margin: 0;
+        margin-bottom: 40px;
+      }
+      footer {
+        background-color: rgb(77, 170, 237);
+        /*position: absolute;*/
+        bottom: 0;
+        width: 100%;
+        height:60px;
+        color: white;
+      }
+     
+  
+      #texto{
+        background-color: black; 
+        box-shadow: 10px 5px 5px rgba(242, 78, 157, 0.436);
+      }
+      #texto a{
+        font-size: 40px;
+        padding-left: 30px;
+      }
+      #lenguaje{
+        background-color:white;
+
+      }
+
+      /*--Prueba*/
+      #check{
+        position: relative;
+        width: 50px;
+        height: 25px;
+      }
+      #check:before{
+        content: '';
+        position: absolute;
+        width: 50px;
+        height: 25px;
+        background: rgb(77, 170, 237);/* #333 ;*/
+        border-radius: 25px;
+      }
+      #check:after{
+        content: '';
+        position: absolute;
+        right: 0;
+        height: 25px;
+        width: 25px;
+        background: #fff;
+        border-radius: 25px;
+        transition: 0.25s;
+        border: 2px solid #333;
+        box-sizing: border-box;
+      }
+      #check:checked:after{
+        left: 25px;
+        border: 2px solid rgb(242, 78, 157);
+      }
+      #check:checked:before{
+        background: rgb(242, 78, 157);
+      }
+
+      .love::before {
+        content: '\2665';
+        color: red;
+        font-size: 3rem;
+      }
+
+    </style>
+     <!-- NATIVO --
+     <link rel="stylesheet" href="{{ url_for('static', filename='index.css')}}"-->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+     <script
+     src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+  <nav >
+    <div  id="texto">
+      <a class="navbar-brand" >TE AMO ❣ </a> 
+    </div>
+
+    
+  </nav>
+
+  
+
+ <!-- <header class="py-lg-5 px-7" -->
+    <div class="card ">
+        <div style="padding-left: 30px;">
+            <div class="col-md-4" style="height:300px">
+                <div class="columna">
+                    <figure>
+                        <div class="delfin"> </div>
+                        <div class="capa">
+                            <h3 id="titulo2">Click para emepzar</h3>
+                            <button id="boton2" class="btn btn-danger">clik para ver contenido</button>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div style="padding-left: 30px;">
+            <div class="col-md-4" style="height:300px">
+                <div class="columna">
+                    <figure>
+                        <div class="delfin"> </div>
+                        <div class="capa">
+                            <h3 id="titulo">Click para emepzar</h3>
+                            <button id="boton" class="btn btn-danger">clik para ver contenido</button>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div style="padding-left: 30px;">
+            <div class="col-md-4" style="height:300px">
+                <div class="columna">
+                    <figure>
+                        <div class="delfin"> </div>
+                        <div class="capa">
+                            <h3 id="titulo3" >Click para emepzar</h3>
+                            <button id="boton3" class="btn btn-danger">clik para ver contenido</button>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding-left: 30px;">
+          <div class="col-md-4" style="height:300px">
+              <div class="columna">
+                  <figure>
+                      <div class="delfin"> </div>
+                      <div class="capa">
+                          <h3 id="titulo4">Click para emepzar</h3>
+                          <button id="boton4" class="btn btn-danger">clik para ver contenido</button>
+                      </div>
+                  </figure>
+              </div>
+          </div>
+      </div>
+      <div style="padding-left: 30px;">
+          <div class="col-md-4" style="height:300px">
+              <div class="columna">
+                  <figure>
+                      <div class="delfin"> </div>
+                      <div class="capa">
+                          <h3 id="titulo5">Click para emepzar</h3>
+                          <button id="boton5" class="btn btn-danger">clik para ver contenido</button>
+                      </div>
+                  </figure>
+              </div>
+          </div>
+      </div>
+      <div style="padding-left: 30px;">
+          <div class="col-md-4" style="height:300px">
+              <div class="columna">
+                  <figure>
+                      <div class="delfin"> </div>
+                      <div class="capa">
+                          <h3 id="titulo6" >Click para emepzar</h3>
+                          <button id="boton6" class="btn btn-danger">clik para ver contenido</button>
+                      </div>
+                  </figure>
+              </div>
+          </div>
+      </div>
+
+    </div>
+
+  <!-- </header -->
+
+  <footer class="py-5" >
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; </p>
+      <p class = "m-0 text-center text-white">LOVE 2023</p>
+    </div>
+  </footer>
+
+  <script>
+    function cambio(){
+      document.getElementById("titulo").innerHTML="Eres de las mejores cosas que me pudo pasar";
+    }
+    document.getElementById("boton").onclick=function(){
+      cambio();
+    }
+  </script>
+  <script>
+    function cambio2(){
+      document.getElementById("titulo2").innerHTML="Eres mas hermosa de lo que crees";
+    }
+    document.getElementById("boton2").onclick=function(){
+      cambio2();
+    }
+  </script>
+  <script>
+    function cambio3(){
+      document.getElementById("titulo3").innerHTML="Creo en ti y se que a pesar de todo tu tambien lo haces";
+    }
+    document.getElementById("boton3").onclick=function(){
+      cambio3();
+    }
+  </script>
+  
+
+  <script>
+    function cambio4(){
+      document.getElementById("titulo4").innerHTML="No solo eres tu en un 11:11, eres tu en cualquier hora";
+    }
+    document.getElementById("boton4").onclick=function(){
+      cambio4();
+    }
+  </script>
+  <script>
+    function cambio5(){
+      document.getElementById("titulo5").innerHTML="Por si se te llega a olivdar te recuerdo que me encantas";
+    }
+    document.getElementById("boton5").onclick=function(){
+      cambio5();
+    }
+  </script>
+  <script>
+    function cambio6(){
+      document.getElementById("titulo6").innerHTML="Te amo mi princesa";
+    }
+    document.getElementById("boton6").onclick=function(){
+      cambio6();
+    }
+  </script>
+        
+</body>
+</html>
